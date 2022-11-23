@@ -1,6 +1,23 @@
-let content = document.querySelector('#content');
-let child = document.createElement('div');
-document.body.appendChild(child);
+import './style.css';
+import Italy from './italyflag.png';
 
+const content = document.querySelector('#content');
 
-child.innerHTML = 'Hello world!';
+const form = () => {
+
+    const italyFlag = new Image();
+    italyFlag.src = Italy;
+
+    const header = document.createElement('div');
+    header.classList = 'header';
+    content.appendChild(header);
+
+    const main = document.createElement('div');
+
+    const footer = document.createElement('div');
+    footer.classList = 'footer';
+    content.appendChild(footer);
+
+}
+
+form();
