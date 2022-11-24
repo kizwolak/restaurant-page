@@ -70,8 +70,12 @@ const form = () => {
     main.appendChild(descHeader);
 
     const contDesc = document.createElement('p');
-    contDesc.textContent = 'Our chefs never wash their hands, our ingredients are always rotten and our pizzas are made a month in advance and they never see the inside of a freezer. Please come visit us!'
+    contDesc.textContent = 'Our chefs never wash their hands, our ingredients are always rotten and our pizzas are made a month in advance and they never see the inside of a freezer.'
     main.appendChild(contDesc);
+
+    const descEnd = document.createElement('h2');
+    descEnd.textContent = 'Come visit us today!';
+    main.appendChild(descEnd);
 
     const footer = document.createElement('div');
     footer.classList = 'footer';
