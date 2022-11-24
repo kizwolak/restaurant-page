@@ -1,17 +1,19 @@
 import './style.css';
-import moldyLogoMobile from './moldyLogoMobile.jpg';
+import mouldyLogoMobile from './moldyLogoMobile.jpg';
 import slime from './slime.png';
-const content = document.querySelector('#content');
+import menu from './menu.js';
 
 
-const home = () => {
+export default function home() {
     
+    const content = document.querySelector('#content');
+
     const clear = () => {
         content.innerHTML = ''
     }
 
     const moldyLogo = new Image();
-    moldyLogo.src = moldyLogoMobile;
+    moldyLogo.src = mouldyLogoMobile;
 
     const slimeImg = new Image();
     slimeImg.src = slime;
@@ -47,6 +49,11 @@ const home = () => {
     btn1.addEventListener('click', () => {
         clear();
         home();
+    });
+
+    btn2.addEventListener('click', () => {
+        clear();
+        menu();
     });
 
     headerMenu.appendChild(tab1);
