@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./OpenSans-VariableFont_wdth\,wght.ttf') format("truetype-variations");
+    font-weight: 1 999;
+  }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
 
 body {
@@ -23,18 +30,27 @@ body {
     background-color: beige;
     margin-top: 2em;
     background-color: rgb(81, 82, 36);
+    margin-bottom: 1em;
 }
 
 
 .headerImg > img {
     width: 80vw;
     border-radius: 20%;
+    margin-bottom: 1em;
 }
 
 .headerMenu {
     display: flex;
     justify-content: center;
     gap: 2em;
+}
+
+.headerMenu button {
+    background-color: #62726e;
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
 }
 
 .main {
