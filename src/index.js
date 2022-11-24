@@ -81,6 +81,9 @@ const form = () => {
     footer.classList = 'footer';
     content.appendChild(footer);
 
+    const footerDesc = document.createElement('p');
+    footerDesc.textContent = 'Alfredo\'s Disgusting Pizza, 2022, All Rights Reserved. All copies of our idea will be punished by 25 years of prison time or a 100 USD fine.'
+    footer.appendChild(footerDesc);
 }
 
 form();
