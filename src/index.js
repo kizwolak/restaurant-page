@@ -8,6 +8,10 @@ moldyLogo.src = moldyLogoMobile;
 
 const slimeImg = new Image();
 slimeImg.src = slime;
+const slimeImg2 = new Image();
+slimeImg2.src = slime;
+const slimeImg3 = new Image();
+slimeImg3.src = slime;
 
 const form = () => {
 
@@ -42,10 +46,8 @@ const form = () => {
     tab2.appendChild(btn2);
     tab3.appendChild(btn3);
     tab1.appendChild(slimeImg);
-    tab2.appendChild(slimeImg);
-    tab3.appendChild(slimeImg);
-    
-
+    tab2.appendChild(slimeImg2);
+    tab3.appendChild(slimeImg3);
 
 
     header.appendChild(headerMenu);
@@ -60,8 +62,16 @@ const form = () => {
     main.appendChild(mainHeader);
 
     const mainDesc = document.createElement('p');
-    mainDesc.textContent = 'Do you feel like it is impossible to mess it up? Have you enjoyed every pizza you have ever eaten? If so, we are here to completely change your point of view! Alfredo\'s Disgusting Pizza is dedicated to bringing you the worst pizza experience possible. Our chefs never wash their hands, our ingredients are always rotten and our pizzas are made a month in advance and they never see the inside of a freezer. Please come visit us!'
+    mainDesc.textContent = 'Do you feel like it is impossible to mess it up? Have you enjoyed every pizza you have ever eaten? If so, we are here to completely change your point of view!'
     main.appendChild(mainDesc);
+
+    const descHeader = document.createElement('h2');
+    descHeader.textContent = 'Alfredo\'s Disgusting Pizza is dedicated to bringing you the worst pizza experience possible.'
+    main.appendChild(descHeader);
+
+    const contDesc = document.createElement('p');
+    contDesc.textContent = 'Our chefs never wash their hands, our ingredients are always rotten and our pizzas are made a month in advance and they never see the inside of a freezer. Please come visit us!'
+    main.appendChild(contDesc);
 
     const footer = document.createElement('div');
     footer.classList = 'footer';

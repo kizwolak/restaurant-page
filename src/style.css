@@ -2,13 +2,23 @@
     font-family: 'Open Sans';
     src: url('./OpenSans-VariableFont_wdth\,wght.ttf') format("truetype-variations");
     font-weight: 1 999;
-  }
+}
+
+@font-face {
+    font-family: 'Creepster';
+    src: url(./Creepster-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Eater';
+    src: url(./Eater-Regular.ttf);
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans';
+    font-family: 'Eater', 'Open Sans', sans-serif;
 }
 
 body {
@@ -26,14 +36,12 @@ body {
 .header
     {
     width: 80vw;
-    height: 20vh;
+    height: 22vh;
     background-color: beige;
     margin-top: 2em;
     background-color: rgb(81, 82, 36);
     margin-bottom: 3em;
-
 }
-
 
 .headerImg > img {
     width: 80vw;
@@ -50,16 +58,22 @@ body {
 }
 
 .headerMenu img {
-    width: 50px;
+    width: 50%;
     height: 50px;
 }
 
 .headerMenu button {
     background-color: #62726e;
     border: none;
-    padding: 0.9em;
+    padding: 0.4em;
     font-size: 1.2em;
     border-radius: 2em;
+}
+
+.headerBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headerMenu button::hover {
@@ -68,8 +82,17 @@ body {
 
 .main {
     width: 80vw;
-    height: 70vh;
+    height: auto;
     background-color: rgb(81, 82, 36);
+}
+
+.main > p {
+    font-size: 1.1em;
+}
+
+h2 {
+    font-family: 'Creepster', 'Open Sans', sans-serif;
+    font-size: 3em;
 }
 
 .footer {
