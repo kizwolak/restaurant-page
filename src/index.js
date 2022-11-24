@@ -1,15 +1,18 @@
 import './style.css';
-import Italy from './italyflag.png';
+import moldyLogoMobile from './moldyLogoMobile.jpg';
 const content = document.querySelector('#content');
 
 const form = () => {
 
-    const italyFlag = new Image();
-    italyFlag.src = Italy;
+    const moldyLogo = new Image();
+    moldyLogo.src = moldyLogoMobile;
 
     const header = document.createElement('div');
     header.classList = 'header';
     content.appendChild(header);
+
+    const header1 = document.createElement('div');
+    header.appendChild(moldyLogo);
 
     const main = document.createElement('div');
     main.classList = 'main';
