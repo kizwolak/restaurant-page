@@ -3,17 +3,22 @@ import moldyLogoMobile from './moldyLogoMobile.jpg';
 import slime from './slime.png';
 const content = document.querySelector('#content');
 
-const moldyLogo = new Image();
-moldyLogo.src = moldyLogoMobile;
 
-const slimeImg = new Image();
-slimeImg.src = slime;
-const slimeImg2 = new Image();
-slimeImg2.src = slime;
-const slimeImg3 = new Image();
-slimeImg3.src = slime;
+const home = () => {
+    
+    const clear = () => {
+        content.innerHTML = ''
+    }
 
-const form = () => {
+    const moldyLogo = new Image();
+    moldyLogo.src = moldyLogoMobile;
+
+    const slimeImg = new Image();
+    slimeImg.src = slime;
+    const slimeImg2 = new Image();
+    slimeImg2.src = slime;
+    const slimeImg3 = new Image();
+    slimeImg3.src = slime;
 
     const header = document.createElement('div');
     header.classList = 'header';
@@ -38,6 +43,11 @@ const form = () => {
     btn1.textContent = 'Home';
     btn2.textContent = 'Menu';
     btn3.textContent = 'Contact';
+
+    btn1.addEventListener('click', () => {
+        clear();
+        home();
+    });
 
     headerMenu.appendChild(tab1);
     headerMenu.appendChild(tab2);
@@ -86,4 +96,4 @@ const form = () => {
     footer.appendChild(footerDesc);
 }
 
-form();
+home();
