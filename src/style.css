@@ -25,9 +25,16 @@ body {
     background-color: rgb(81, 82, 36);
 }
 
+
 .headerImg > img {
     width: 80vw;
     border-radius: 20%;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
 }
 
 .main {

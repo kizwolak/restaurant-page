@@ -17,6 +17,7 @@ const form = () => {
     header.appendChild(headerImg);
 
     const headerMenu = document.createElement('div');
+    headerMenu.classList = 'headerMenu'
     const tab1 = document.createElement('button');
     const tab2 = document.createElement('button');
     const tab3 = document.createElement('button');
