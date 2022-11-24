@@ -31,8 +31,7 @@ body {
     margin-top: 2em;
     background-color: rgb(81, 82, 36);
     margin-bottom: 3em;
-    display: flex;
-    flex-direction: column;
+
 }
 
 
@@ -50,7 +49,7 @@ body {
     border-radius: 20%;
 }
 
-.header img {
+.headerMenu img {
     width: 50px;
     height: 50px;
 }
