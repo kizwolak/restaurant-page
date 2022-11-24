@@ -25,24 +25,21 @@ body {
     background-color: rgb(81, 82, 36);
 }
 
-.header > img {
+.headerImg > img {
     width: 80vw;
     border-radius: 20%;
 }
 
+.main {
+    width: 80vw;
+    height: 70vh;
+    background-color: rgb(81, 82, 36);
+}
 
 .footer {
     width: 80vw;
     height: 6vh;
     background-color: beige;
     margin-bottom: 2vh;
-}
-
-
-
-.main {
-    width: 80vw;
-    height: 70vh;
-    background-color: beige;
 }
 
