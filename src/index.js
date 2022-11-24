@@ -1,5 +1,6 @@
 import './style.css';
 import Italy from './italyflag.png';
+const content = document.querySelector('#content');
 
 const form = () => {
 
@@ -8,13 +9,15 @@ const form = () => {
 
     const header = document.createElement('div');
     header.classList = 'header';
-    document.body.appendChild(header);
+    content.appendChild(header);
 
     const main = document.createElement('div');
+    main.classList = 'main';
+    content.appendChild(main);
 
     const footer = document.createElement('div');
     footer.classList = 'footer';
-    document.body.appendChild(footer);
+    content.appendChild(footer);
 
 }
 
