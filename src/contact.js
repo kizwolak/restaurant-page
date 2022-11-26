@@ -2,10 +2,9 @@ import './style.css';
 import mouldyLogoMobile from './moldyLogoMobile.jpg';
 import slime from './slime.png';
 import menu from './menu.js';
-import contact from './contact.js';
+import index from './index.js';
 
-
-export default function home() {
+export default function contact() {
     
     const content = document.querySelector('#content');
 
@@ -81,7 +80,7 @@ export default function home() {
     content.appendChild(main);
 
     const mainHeader = document.createElement('h2');
-    mainHeader.textContent = 'Is pizza your favourite food?';
+    mainHeader.textContent = 'Get in touch now!';
     main.appendChild(mainHeader);
 
     const mainDesc = document.createElement('p');
@@ -108,5 +107,3 @@ export default function home() {
     footerDesc.textContent = 'Alfredo\'s Disgusting Pizza, 2022, All Rights Reserved. All copies of our idea will be punished by 25 years of prison time or a 100 USD fine.';
     footer.appendChild(footerDesc);
 }
-
-home();

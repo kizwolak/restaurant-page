@@ -2,6 +2,14 @@ import './style.css';
 import mouldyLogoMobile from './moldyLogoMobile.jpg';
 import slime from './slime.png';
 import home from './index.js';
+import contact from './contact.js';
+import mouldyBread from './mouldyBread.jpg';
+import macAndCheeseSrc from './TommyWind.jpg';
+import bug from './bugPizza.jpeg';
+import rat from './ratPizza.jpg';
+import mouldy from './mouldyPizza.jpg';
+import poop from './poopDessert.jpg';
+import egg from './virginEgg.jpg';
 
 export default function menu() {
         
@@ -51,6 +59,16 @@ export default function menu() {
         home();
     });
 
+    btn2.addEventListener('click', () => {
+        clear();
+        menu();
+    });
+
+    btn3.addEventListener('click', () => {
+        clear();
+        contact();
+    });
+
     headerMenu.appendChild(tab1);
     headerMenu.appendChild(tab2);
     headerMenu.appendChild(tab3);
@@ -69,31 +87,119 @@ export default function menu() {
     main.classList = 'main';
     content.appendChild(main);
 
-    const mainHeader = document.createElement('h2');
-    mainHeader.textContent = 'Is pizza your favourite food?'
-    main.appendChild(mainHeader);
+    const medical = document.createElement('h1');
+    medical.textContent = 'WE OFFER IMMEDIATE MEDICAL ATTENTION!';
+    main.appendChild(medical);
 
-    const mainDesc = document.createElement('p');
-    mainDesc.textContent = 'Do you feel like it is impossible to mess it up? Have you enjoyed every pizza you have ever eaten? If so, we are here to completely change your point of view!'
-    main.appendChild(mainDesc);
+    const menu = document.createElement('h2');
+    menu.textContent = 'Menu';
+    main.appendChild(menu);
 
-    const descHeader = document.createElement('h2');
-    descHeader.textContent = 'Alfredo\'s Disgusting Pizza is dedicated to bringing you the worst pizza experience possible.'
-    main.appendChild(descHeader);
+    const starters = document.createElement('h3')
+    starters.textContent = 'Starters';
+    main.appendChild(starters);
 
-    const contDesc = document.createElement('p');
-    contDesc.textContent = 'Our chefs never wash their hands, our ingredients are always rotten and our pizzas are made a month in advance and they never see the inside of a freezer.'
-    main.appendChild(contDesc);
+    const bread = document.createElement('div');
+    bread.classList = 'meal';
+    main.appendChild(bread);
+    
+    const mouldyBreadImg = new Image();
+    mouldyBreadImg.src = mouldyBread;
+    bread.appendChild(mouldyBreadImg);
 
-    const descEnd = document.createElement('h2');
-    descEnd.textContent = 'Come visit us today!';
-    main.appendChild(descEnd);
+    const breadDesc = document.createElement('p')
+    breadDesc.textContent = 'Our mouldy bread, 1 month old. Bowl of water to soften the bread provided for only 0.99 cents.';
+    bread.appendChild(breadDesc);
+
+    const macAndCheese = document.createElement('div');
+    macAndCheese.classList = 'meal';
+    main.appendChild(macAndCheese);
+    
+    const macAndCheeseImg = new Image();
+    macAndCheeseImg.src = macAndCheeseSrc;
+    macAndCheese.appendChild(macAndCheeseImg);
+
+    const macDesc = document.createElement('p')
+    macDesc.textContent = 'Gatorade Mac and Cheese. Guaranteed to make you sick!';
+    macAndCheese.appendChild(macDesc);
+
+    const mains = document.createElement('h3')
+    mains.textContent = 'Main courses';
+    main.appendChild(mains);
+
+    const bugPizza = document.createElement('div');
+    bugPizza.classList = 'meal';
+    main.appendChild(bugPizza);
+    
+    const bugPizzaImg = new Image();
+    bugPizzaImg.src = bug;
+    bugPizza.appendChild(bugPizzaImg);
+
+    const bugPizzaDesc = document.createElement('p')
+    bugPizzaDesc.textContent = 'Pizza made with locally sourced bugs. We work with ethical sewers in order to serve you the most nutritious meal possible.';
+    bugPizza.appendChild(bugPizzaDesc);
+
+    const ratPizza = document.createElement('div');
+    ratPizza.classList = 'meal';
+    main.appendChild(ratPizza);
+    
+    const ratPizzaImg = new Image();
+    ratPizzaImg.src = rat;
+    ratPizza.appendChild(ratPizzaImg);
+
+    const ratPizzaDesc = document.createElement('p')
+    ratPizzaDesc.textContent = 'THE FIGHTER. Fight with our rat for your meal. Careful, it was never vaccinated against rabies!';
+    ratPizza.appendChild(ratPizzaDesc);
+
+    const mouldyPizza = document.createElement('div');
+    mouldyPizza.classList = 'meal';
+    main.appendChild(mouldyPizza);
+    
+    const mouldyPizzaImg = new Image();
+    mouldyPizzaImg.src = mouldy;
+    mouldyPizza.appendChild(mouldyPizzaImg);
+
+    const mouldyPizzaDesc = document.createElement('p')
+    mouldyPizzaDesc.textContent = 'Our specialty. The carefully conducted aging process of the cheese ensures an experience like never before!';
+    mouldyPizza.appendChild(mouldyPizzaDesc);
+
+    const desserts = document.createElement('h3')
+    desserts.textContent = 'Desserts';
+    main.appendChild(desserts);
+
+    const poopDessert = document.createElement('div');
+    poopDessert.classList = 'meal';
+    main.appendChild(poopDessert);
+    
+    const poopDessertImg = new Image();
+    poopDessertImg.src = poop;
+    poopDessert.appendChild(poopDessertImg);
+
+    const poopDessertDesc = document.createElement('p')
+    poopDessertDesc.textContent = 'A poop dessert inspired by a stay at Charleroi Airport. Due to the large amount of ingredients we use, your serving may not contain chocolate.';
+    poopDessert.appendChild(poopDessertDesc);
+
+    const eggDessert = document.createElement('div');
+    eggDessert.classList = 'meal';
+    main.appendChild(eggDessert);
+    
+    const eggDessertImg = new Image();
+    eggDessertImg.src = egg;
+    eggDessert.appendChild(eggDessertImg);
+
+    const eggDessertDesc = document.createElement('p')
+    eggDessertDesc.textContent = 'Virgin boy eggs made with urine of sick boys. A Chinese delicacy with a local twist!';
+    eggDessert.appendChild(eggDessertDesc);
+
+    const orderNow = document.createElement('h3')
+    orderNow.textContent = 'ORDER NOW!!!';
+    main.appendChild(orderNow);
 
     const footer = document.createElement('div');
     footer.classList = 'footer';
     content.appendChild(footer);
 
     const footerDesc = document.createElement('p');
-    footerDesc.textContent = 'Alfredo\'s Disgusting Pizza, 2022, All Rights Reserved. All copies of our idea will be punished by 25 years of prison time or a 100 USD fine.'
+    footerDesc.textContent = 'Alfredo\'s Disgusting Pizza, 2022, All Rights Reserved. All copies of our idea will be punished by 25 years of prison time or a 100 USD fine.';
     footer.appendChild(footerDesc);
 };

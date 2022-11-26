@@ -90,9 +90,27 @@ body {
     font-size: 1.1em;
 }
 
+h1 {
+    font-family: 'Creepster', 'Open Sans', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
 h2 {
     font-family: 'Creepster', 'Open Sans', sans-serif;
     font-size: 3em;
+}
+
+h3 {
+    font-family: 'Creepster', 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.meal > img,
+.contact > img {
+    margin-top: 2em;
+    width: 100%;
 }
 
 .footer {
