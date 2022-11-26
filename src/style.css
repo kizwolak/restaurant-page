@@ -128,3 +128,23 @@ h3 {
     font-size: 0.7em;
 }
 
+@media screen and (min-width: 1000px) {
+    .headerImg>img {
+        position: relative;
+        height: 35vh;
+    }
+
+    .headerBtn {
+        padding: 0 10em;
+    }
+
+    .headerBtn > button {
+        width: 200%;
+    }
+
+    .meal > img {
+        height: 30%;
+        width: 30%;
+    }
+
+}

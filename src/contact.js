@@ -96,7 +96,7 @@ export default function contact() {
     horace.appendChild(horaceImg);
 
     const horaceDesc = document.createElement('p')
-    horaceDesc.textContent = 'Horace Moice is the owner and head chef. He pours all of his hate and aversion to life and humanity itself into every dish. This is what he has to say: "I have been stuck here for over 15 years. I don\'t even know why I named this place "Alfredo\'s". I will probably die of a heart attack while making the worst food on this planet. My dream is to die before turning 40."';
+    horaceDesc.textContent = 'Horace Moice is the owner and head chef. He pours all of his hate and aversion to life and humanity itself into every dish. This is what he has to say: "I have been stuck here for over 15 years. I don\'t even know why I named this place "Alfredo\'s". I will probably die of a heart attack while making the worst food on this planet. My dream is to expire before turning 40."';
     horace.appendChild(horaceDesc);
 
     const horaceNumber= document.createElement('p')
@@ -132,7 +132,7 @@ export default function contact() {
     anna.appendChild(annaImg);
 
     const annaDesc = document.createElement('p')
-    annaDesc.textContent = 'Anna Manna Banna Ranna is another of our employees. She is our spiritual adviser and guide through the world beyond. Also offers acupuncture services.';
+    annaDesc.textContent = 'Anna Manna Banna Ranna is another one of our employees. She is our spiritual adviser and guide through the world beyond. Also offers acupuncture services.';
     anna.appendChild(annaDesc);
 
     const annaNumber= document.createElement('p')
