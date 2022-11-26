@@ -2,7 +2,11 @@ import './style.css';
 import mouldyLogoMobile from './moldyLogoMobile.jpg';
 import slime from './slime.png';
 import menu from './menu.js';
-import index from './index.js';
+import home from './index.js';
+import horaceJpg from './Horace.jpg';
+import child from './child.jpg';
+import lady from './lady.jpg';
+
 
 export default function contact() {
     
@@ -83,21 +87,57 @@ export default function contact() {
     mainHeader.textContent = 'Get in touch now!';
     main.appendChild(mainHeader);
 
-    const mainDesc = document.createElement('p');
-    mainDesc.textContent = 'Do you feel like it is impossible to mess it up? Have you enjoyed every pizza you have ever eaten? If so, we are here to completely change your point of view!';
-    main.appendChild(mainDesc);
+    const horace = document.createElement('div');
+    horace.classList = 'meal';
+    main.appendChild(horace);
+    
+    const horaceImg = new Image();
+    horaceImg.src = horaceJpg;
+    horace.appendChild(horaceImg);
 
-    const descHeader = document.createElement('h2');
-    descHeader.textContent = 'Alfredo\'s Disgusting Pizza is dedicated to bringing you the worst pizza experience possible.';
-    main.appendChild(descHeader);
+    const horaceDesc = document.createElement('p')
+    horaceDesc.textContent = 'Horace Moice is the owner and head chef. He pours all of his hate and aversion to life and humanity itself into every dish. This is what he has to say: "I have been stuck here for over 15 years. I don\'t even know why I named this place "Alfredo\'s". I will probably die of a heart attack while making the worst food on this planet. My dream is to die before turning 40."';
+    horace.appendChild(horaceDesc);
 
-    const contDesc = document.createElement('p');
-    contDesc.textContent = 'Our chefs never wash their hands, our ingredients are always rotten and our pizzas are made a month in advance and they never see the inside of a freezer.';
-    main.appendChild(contDesc);
+    const horaceNumber= document.createElement('p')
+    horaceNumber.textContent = 'Tel: 12345678910';
+    horace.appendChild(horaceNumber);
 
-    const descEnd = document.createElement('h2');
-    descEnd.textContent = 'Come visit us today!';
-    main.appendChild(descEnd);
+    const horaceEmail= document.createElement('p')
+    horaceEmail.textContent = 'E-mail: lordpiss@yahoo.mil';
+    horace.appendChild(horaceEmail);
+
+    const childWorker = document.createElement('div');
+    childWorker.classList = 'meal';
+    main.appendChild(childWorker);
+    
+    const childWorkerImg = new Image();
+    childWorkerImg.src = child;
+    childWorker.appendChild(childWorkerImg);
+
+    const childWorkerDesc = document.createElement('p')
+    childWorkerDesc.textContent = 'Due to state labour laws, we find employing adults to be too expensive. Therefore, we have hired the young Timmy Butter IV, age 12, to be our delivery driver. As he says, "Working at such a young age is a privilege. While it is hard to fit going to school into my schedule while working 8 hours a day, this job is SO rewarding. I love my life!"';
+    childWorker.appendChild(childWorkerDesc);
+
+    const childWorkerNumber= document.createElement('p')
+    childWorkerNumber.textContent = 'Tel: 666666666';
+    childWorker.appendChild(childWorkerNumber);
+
+    const anna = document.createElement('div');
+    anna.classList = 'meal';
+    main.appendChild(anna);
+    
+    const annaImg = new Image();
+    annaImg.src = lady;
+    anna.appendChild(annaImg);
+
+    const annaDesc = document.createElement('p')
+    annaDesc.textContent = 'Anna Manna Banna Ranna is another of our employees. She is our spiritual adviser and guide through the world beyond. Also offers acupuncture services.';
+    anna.appendChild(annaDesc);
+
+    const annaNumber= document.createElement('p')
+    annaNumber.textContent = 'Tel: 4208000569';
+    anna.appendChild(annaNumber);
 
     const footer = document.createElement('div');
     footer.classList = 'footer';
